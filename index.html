@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang=ja>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>檀ゼミゼミ旅行</title>
+    <link rel="stylesheet" href="main_pc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Rampart+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>檀ゼミ<br>ゼミ旅行のしおり<br>～in15期生～</h1>
+        <div id="header_background"></div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム画面</a></li>
+            <li><a href="search.html">おきにいり</a></li>
+            <li><a href="index.html#Osusume"> 本日の日程</a></li>
+            <li><a href="otanosimi.html">スライドショー</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <main>
+        <h2 id="Kiziitirann">旅行の日程</h2>
+        <br>
+        <div id="NitteiMatome">
+            <div class="oneDay" id="fastDay">
+                <h3>9月11日</h3>
+                <h4>7:00</h4>
+                <p class="Nittei">搭乗完了</p>
+                <h4>7:30</h4>
+                <p class="Nittei">松山空港発</p>
+                <h4>8:55</h4>
+                <p class="Nittei">羽田空港到着 ホテルへ移動</p>
+                <h4>9:40</h4>
+                <p class="Nittei">ホテルへ到着 荷物を預ける</p>
+                <h4>残りの日程</h4>
+                <p class="Nittei">自由時間</p>
+            </div>
+            <div class="oneDay" id="secondDay_1">
+                <h3>9月12日</h3>
+                <h4>14:00</h4>
+                <p class="Nittei">株式会社クレッセント様に訪問</p>
+                <p class="Nittei">※訪問しないに回答した方は一日中自由行動です。</p>
+            </div>
+            <div class="oneDay" id="thirdDay">
+                <h3>9月13日</h3>
+                <h4>8:30</h4>
+                <p class="Nittei">チェックアウトを済ませ、ホテルを発つ</p>
+                <h4>10:00</h4>
+                <p class="Nittei">サンシャイン水族館到着</p>
+                <h4>12:00</h4>
+                <p class="Nittei">サンシャイン水族館出発</p>
+                <h4>羽田空港到着後</h4>
+                <p class="Nittei">自由行動、おみやげの購入など</p>
+                <h4>16:55</h4>
+                <p class="Nittei">飛行機へ搭乗</p>
+                <h4>17:25</h4>
+                <p class="Nittei">羽田空港発</p>
+                <h4>18:55</h4>
+                <p class="Nittei">松山空港着、解散</p>
+            </div>
+        </div>
+    </main>
+    <div id="PictureWindow">
+        <h1 class="sub">画像拡大表示中</h1>
+        <p>終了したい場合は、右にあるボタンを押してください</p>
+        <p><input type="button" value="閉じるボタン" class="CButton" onclick="PictureSmaller()"></p>
+        <img src="仮組.png" id="Bigpicture" width="880px">
+    </div>
+    <div id="loadingWindow">
+    </div>
+    <footer>
+        <small>&copy;檀ゼミゼミ旅行2023</small>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
